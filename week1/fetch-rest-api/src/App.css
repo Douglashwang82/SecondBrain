@@ -1,0 +1,40 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+
+
+.loading, .success, .default, .error {
+  border: solid;
+}
+
+
+.loading, .success, .default, .error{
+  width: 100%;
+  max-width: 50%;
+  background-color: white;
+  padding: 15px 30px;
+}
+
+.loading, .success, .default, .error h2 {
+  color: #888;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mybutton {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap:10px;
+}

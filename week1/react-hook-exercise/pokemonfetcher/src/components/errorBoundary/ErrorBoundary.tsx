@@ -1,7 +1,8 @@
 import React, { Component, ErrorInfo } from 'react'
 import {GenerateCard} from "../getPokemon/GetPokemon";
-
-
+import { MyInput } from '../searchBar/SearchBarElements';
+import { MyButton } from '../searchBar/SearchBarElements';
+import SearchBar from '../searchBar/SearchBar';
 const initialSpecial: Attack = {
   name: "-",
   type: "-",
@@ -34,6 +35,8 @@ const LoadingState: DataState = {
 type Props = {
     children: JSX.Element;
     handleReset: any;
+    handleTarget:any;
+    handleOnChange:any;
 }
 
 type State = {
@@ -60,6 +63,10 @@ class ErrorBoundary extends Component<Props, State> {
     })
     this.props.handleReset();
   }
+
+  handleOnClick(){
+    
+  }
   render(){
     // if (this.state.errorInfo.componentStack !== "") {
     //   // Error path
@@ -77,6 +84,8 @@ class ErrorBoundary extends Component<Props, State> {
     if (this.state.errorInfo.componentStack !== ""){
       return (
       <> 
+      
+      <SearchBar handleOnClick= {this.props.handleTarget}/>
       <GenerateCard {...ErrorState} name ={this.state.error} handleRest={this.handleErrorReset.bind(this)}></GenerateCard>
       </>  
       )

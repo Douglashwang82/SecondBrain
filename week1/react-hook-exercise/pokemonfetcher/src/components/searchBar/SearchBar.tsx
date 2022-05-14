@@ -3,11 +3,10 @@ import { MyInput, Container, MyButton } from './SearchBarElements'
 
 type Props = {
   handleOnClick: any,
-  target :string,
 }
 
-const SearchBar = ({ handleOnClick, target }: Props) => {
-  const [userInput, setUserInput] = useState<string>(target);
+const SearchBar = ({ handleOnClick}: Props) => {
+  const [userInput, setUserInput] = useState<string>("");
   return (
     <Container>
         <MyInput placeholder='Which pokemon?' onChange={(e) => setUserInput(e.target.value)}></MyInput>
