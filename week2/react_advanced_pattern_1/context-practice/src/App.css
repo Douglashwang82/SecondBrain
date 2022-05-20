@@ -1,0 +1,22 @@
+h1{
+  text-align: center;
+}
+.App {
+  margin:0;
+  
+  align-items: center;
+}
+
+form {
+  width: 50%;
+  background-color: bisque;
+  margin: auto;
+  padding:10px;
+}
+label {
+  width:100%;
+}
+
+input {
+  width:100%;
+}
