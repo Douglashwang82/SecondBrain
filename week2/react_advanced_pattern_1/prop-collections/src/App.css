@@ -1,0 +1,38 @@
+.animatedButton {
+    grid-area: a;
+    background-color: transparent;
+    border: none;
+}
+
+.counter {
+    display:grid;
+    grid-template: 
+    "a a" 50px
+    "a a" 50px
+    "b c"; 
+    gap: 10px;
+    border: solid;
+    padding: 20px;
+                   
+}
+
+.heartCounter {
+    display:grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    border:solid;
+    padding: 20px;
+}
+.number {
+    font-size: 50px;
+    margin:auto;
+}
+
+.animatedHeartButton {
+    background-color: transparent;
+    border: none;
+}
+.heartImg {
+    width: 50px;
+    height: 50px;
+}
